@@ -2,14 +2,14 @@
 import type { BookId, Genre, LoanStatus } from "./types";
 export class Book {
   // TODO: додай типи до властивостей
-  id: BookId;
-  title: string;
-  author: string;
-  year: number;
-  genre: Genre;
+  public id: BookId;
+  public title: string;
+  public author: string;
+  public year: number;
+  public genre: Genre;
 
-  status: LoanStatus = "available";
-  borrowedBy: string | null = null;
+  private status: LoanStatus = "available";
+  private borrowedBy: string | null = null;
 
   // TODO: реалізуй конструктор з параметром opts
   constructor(

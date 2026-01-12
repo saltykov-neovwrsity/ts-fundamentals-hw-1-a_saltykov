@@ -28,7 +28,9 @@ export class Library {
   }
 
   listAvailable(): Book[] {
-    return this.listAll().filter((b) => b.status === "available");
+    return this.listAll().filter(
+      (book) => book.getStatus() === "available"
+    );
   }
 
   borrow(bookId: BookId, personName: string): void {
