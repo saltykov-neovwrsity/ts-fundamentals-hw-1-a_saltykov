@@ -1,3 +1,18 @@
+# Результати тестів:
+
+✓ tests/library.spec.ts (6 tests) 11ms
+✓ Library > add додає книгу; дубльований id кидає помилку 'Item already exists' 4ms
+✓ Library > remove видаляє книгу; якщо id відсутній — помилка 'Book not found' 1ms
+✓ Library > не можна видалити позичену книгу → 'Cannot remove borrowed item' 0ms
+✓ Library > listAvailable не включає позичені книги; listAll показує всі 1ms
+✓ Library > borrow/return делегують помилки з Book і передають точні повідомлення 1ms
+✓ Library > borrow/return з неіснуючим id → помилка 'Book not found' 0ms
+
+Test Files 1 passed (1)
+Tests 6 passed (6)
+Start at 10:57:19
+Duration 58ms
+
 # **ДЗ №1 — Library System (ООП + TypeScript)**
 
 ---
